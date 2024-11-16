@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <style>
+      
+        .photo-container {
+            margin-top: 20px; /* Adjust the top margin */
+        }
+        .photo-container img {
+            width: 100px; /* Set square dimensions */
+            height: 100px;
+            object-fit: cover; /* Ensure the image fills the square proportionally */
+            border-radius: 5px; /* Optional: Adds slight rounding to the corners */
+        }
+        
+    </style>
+</head>
+<body style="background-color: blueviolet;">
+{% extends 'portfolio/base.html' %}
+{% block content %}
+   <div class="photo-container">
+    <img src="portfolio/WhatsApp Image 2024-06-29 at 12.20.05 PM.jpeg" alt="my photo">
+    </div>
+<h2>Welcome to My Portfolio</h2>
+<p>This is a showcase of my skills and projects.</p>
+ <div class="container mt-4">
+<div class="row_3">
+        <div class="col-md-6" style="background-color: rgb(10, 172, 50);">
+          <p style="padding-left: 30%;font-weight: bold;">My skills</p>
+          <br>
+          <ol class="list-group list-group-numbered">
+            <li class="list-group-item">data analysis</li>
+            <li class="list-group-item">data visualization and modelling</li>
+            <li class="list-group-item">web development</li>
+          </ol>
+        </div>
+        <div id ="my_Hobbies" class="col-md-6" style="background-color: rgb(61, 121, 76);">
+          <p style="padding-left: 30%;font-weight: bold;">Projects</p>
+          <br>
+          <ol class="list-group list-group-numbered">
+            <li class="list-group-item">Mama's Hub</li>
+            <li class="list-group-item">World Quant's house price prediction model in mexico</li>
+            <li class="list-group-item">A Laswo studios construction company website </li>
+              <li class="list-group-item">social Buzz's data modelling </li>
+          </ol>
+        </div>
+    </div>
+ </div>
+<div>
+  <br>
+    <p style="display: block;font-size: medium;font-family: Arial, Helvetica, sans-serif;font-weight: 100;">I have a strong background in technology, with a focus on developing innovative software solutions that streamline complex tasks and improve productivity. 
+      Over the years, I've honed my skills in automation, process optimization, and collaboration tools,
+       always aiming to create impactful products that address real-world problems. 
+       My passion lies in leveraging technology to solve challenges, enhance decision-making,
+        and drive efficiency for businesses across various industries.</p>
+</div>
+{% endblock %}
+
+</body>
+</html>
